@@ -1,0 +1,14 @@
+[project]
+name = "pilk-binance-futures"
+version = "0.2.0"
+description = "CLI tool for fetching Binance futures data using CCXT"
+authors = [{ name = "Pilk Bot" }]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "ccxt>=4.0.0",
+    "typer[all]>=0.9.0"
+]
+
+[project.scripts]
+pilk-binance-futures = "binance_futures:app"
